@@ -1,0 +1,12 @@
+
+# create dictionary files with min 6 and maximum 6
+
+crunch 6 6 abcdfehijklmnop >filename.txt
+
+# two or more letters not combined
+
+crunch 6 6 abcdfehijklmnop -d 1>filename.txt
+
+# remove same text not repeated
+
+sudo sed -e '/\(.\).*\1/d' currentfile.txt >newfile.txt
