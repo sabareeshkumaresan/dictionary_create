@@ -10,3 +10,7 @@ crunch 6 6 abcdfehijklmnop -d 1>filename.txt
 # remove same text not repeated
 
 sudo sed -e '/\(.\).*\1/d' currentfile.txt >newfile.txt
+
+# shuffle the words
+
+shuf local.txt >final.txt
